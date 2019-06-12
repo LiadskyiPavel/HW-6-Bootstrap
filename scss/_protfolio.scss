@@ -1,0 +1,188 @@
+.protfolio {
+	background-color: $white;
+	padding-bottom: 20px;
+}
+
+.recent {
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	padding-top: 10px;
+
+	@media (min-width: 768px) {
+		padding-top: 25px;
+	}
+
+	@media (min-width: 1024px) {
+		padding-top: 80px;	
+	}
+
+	&>span {
+		text-transform: uppercase;
+		font-size: 10px;
+		font-weight: 500;
+		color: $about-text-first;
+	}
+}
+
+.recent-title {
+	position: relative;
+
+	h3 {
+		text-transform: capitalize;
+		color: $menu-text;
+		font-weight: 600;
+
+		&:after {
+			content: '';
+			display: block;
+			width: 57px;
+			height: 1px;
+			background-color: $recent;
+			margin: 20px auto;
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			width: 41px;
+			height: 3px;
+			background-color: $lime;
+			border-radius: 10%;
+			position: absolute;
+			top: 96%;
+			// top: 100%;
+			// transform: translateY(-50%);
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	span {
+		color: $lime;
+		font-weight: 600;
+		
+	}
+}
+
+.links {
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+
+	@media (min-width: 768px) {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	@media (min-width: 1024px) {
+		padding-top: 80px;
+		font-size: 13px;
+		margin-bottom: 40px;
+	}
+
+	.activ {
+		color: $lime;
+	}
+	a {
+		position: relative;
+		text-decoration: none;
+		color: $menu-text;
+		padding: 5px;
+		display: inline-block;
+
+		&:hover {
+			color: $lime;
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			width: 1px;
+			height: 13px;
+			background-color: $menu-text;
+			position: absolute;
+			top: 30%;
+			left: 100%;
+		}
+
+		&:last-child:after {
+			display: none;
+		}
+	}
+}
+
+.squer {
+	padding-top: 4px;
+
+	.activ {
+		background-color: $squer;
+		position: relative;
+
+		img {
+			display: none;
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			width: 25px;
+			height: 2px;
+			background-color: $white;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%);
+
+			@media (min-width: 768px) {
+				width: 30px;
+			}
+
+			@media (min-width: 1024px) {
+				width: 67px;
+			}
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			width: 2px;
+			height: 25px;
+			background-color: $white;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 50%;
+
+			@media (min-width: 768px) {
+				height: 30px;
+			}
+
+			@media (min-width: 1024px) {
+				height: 67px;
+			}
+		}
+	}
+
+	.squer-1 {
+		padding: 0 2px;
+
+		&:hover {
+			padding: 0;
+			background-color: $squer;
+			cursor: pointer;
+
+			img {
+				display: none;
+			}
+		}
+	}
+
+	a {
+		text-decoration: none;
+
+		img {
+			width: 100%;
+		}
+	}
+}

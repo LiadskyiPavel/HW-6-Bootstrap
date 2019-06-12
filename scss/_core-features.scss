@@ -1,0 +1,190 @@
+.core-features {
+	background-color: $white;
+	border-top: 1px solid $core;
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	font-weight: 500;
+
+	@media (min-width: 768px) {
+		font-size: 14px;
+	}
+
+	@media (min-width: 1024px) {
+		font-size: 18px;
+	}
+
+	.core {
+		padding: 0;
+		border: 1px solid $core;
+
+		a {
+			display: block;
+			vertical-align: top;
+			text-align: center;
+			padding: 7px 0;
+			color: $menu-text;
+			cursor: pointer;
+
+			@media (min-width: 768px) {
+				padding: 15px 0;
+			}
+
+			@media (min-width: 1024px) {
+				padding: 20px 0;
+			}
+
+			@media (min-width: 1200px) {
+				padding: 30px 0;
+			}
+		}
+
+		&:hover {
+			background-color: $start;
+		}
+
+		&:first-child {
+			border-left: transparent;
+		}
+
+		&:last-child {
+			border-right: transparent;
+		}
+	}
+
+	.activ {
+		background-color: $start;
+		border-bottom: 3px solid $lime;
+		text-decoration: none;
+	}
+
+	@media (min-width: 576px) {
+
+		.core-1 {
+
+			a {
+				position: relative;
+
+				&:before {
+					content: url(../images/core-1.png);
+					display: block;
+					width: 23px;
+					height: 18px;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 10%;
+
+					@media (min-width: 1024px) {
+						left: 20%;
+					}
+
+					@media (min-width: 1200px) {
+						left: 25%;
+					}
+				}
+			}
+		}
+
+		.core-2 {
+			position: relative;
+
+			a {
+
+				&:before {
+					content: url(../images/core-2.png);
+					display: block;
+					width: 23px;
+					height: 18px;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 10%;
+					background-color: transparent;
+
+					@media (min-width: 1024px) {
+						left: 20%;
+					}
+
+					@media (min-width: 1200px) {
+						left: 25%;
+					}
+				}
+			}
+		}
+
+		.core-3 {
+
+			a {
+				position: relative;
+
+				&:before {
+					content: url(../images/core-3.png);
+					display: block;
+					width: 23px;
+					height: 18px;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 10%;
+
+					@media (min-width: 1024px) {
+						left: 15%;
+					}
+
+					@media (min-width: 1200px) {
+						left: 20%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.start {
+	padding: 10px 0;
+	background-color: $start;
+	font-family: 'Poppins', sans-serif;
+
+	@media (min-width: 576px) {
+		padding: 30px 0;
+	}
+
+	@media (min-width: 1024px) {
+		padding: 70px 0 100px;
+	}
+
+	@media (min-width: 1200px) {
+		padding: 100px 0 140px;
+	}
+
+	h3 {
+		font-size: 18px;
+		font-weight: 600;
+		color: $menu-text;
+
+		@media (min-width: 768px) {
+			font-size: 22px;
+		}
+
+		@media (min-width: 1024px) {
+			font-size: 30px;
+		}
+	}
+
+	p {
+		font-size: 10px;
+		color: $about-text-first;
+
+		@media (min-width: 768px) {
+			font-size: 12px;
+		}
+
+		@media (min-width: 1024px) {
+			font-size: 14px;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+}

@@ -1,0 +1,184 @@
+header {
+	min-width: 320px;
+}
+
+.address {
+	background-color: $address;
+}
+
+.address-holder {
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	color: $address-text;
+	padding: 8px 0;
+	
+	@media (min-width: 992px) {
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	}
+
+	a {
+		font-family: 'Poppins', sans-serif;
+		font-size: 13px;
+		color: $address-text;
+		text-decoration: none;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	.home {
+		position: relative;
+
+		@media (min-width: 320px){
+		padding: 0 20px;
+		}
+		
+		.icon-home:before {
+			content: "\e903";
+			position: absolute;
+			top: 3px;
+			left: -2px;
+		}
+	}
+
+	.phone {
+		position: relative;
+
+		@media (min-width: 320px){
+		padding: 0 20px;
+		}
+
+		.icon-phone-call:before {
+			content: "\e905";
+			position: absolute;
+			top: 3px;
+			left: -2px;
+		}
+	}
+
+	.mail {
+		position: relative;
+
+		@media (min-width: 320px) {
+		padding: 0 20px;
+		}
+
+		.icon-envelope:before {
+  			content: "\e901";
+  			position: absolute;
+  			top: 3px;
+			left: -2px;
+		}
+	}
+}
+
+.icon {
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	color: $address-text;
+	padding: 0 70px;
+
+	@media (min-width: 576px) {
+		padding: 0 5px;
+		}
+
+	.activ {
+		color: $white;
+	}
+
+	a {
+		font-family: 'Poppins', sans-serif;
+		font-size: 13px;
+		color: $address-text;
+		text-decoration: none;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	.icon-twitter:before {
+  		content: "\e907";
+	}
+
+	.icon-linkedin:before {
+  		content: "\e904";
+	}
+
+	.icon-facebook:before {
+  		content: "\e902";
+	}
+
+	.icon-skype:before {
+  		content: "\e906";
+	}
+
+	.icon-dribbble:before {
+  		content: "\e900";
+	}
+}
+
+.navigation {
+	background-color: $white;
+
+	img {
+		max-width: 100%;
+	}
+
+	@media (min-width: 992px){
+		
+		.gap {
+			display: none;
+		}
+	}	
+
+	@media (min-width: 1200px){
+		
+		.gap {
+			display: flex;
+		}
+	}
+}
+.navbar-brand {
+
+	@media (min-width: 992px) {
+		display: none;
+	}
+
+	@media (min-width: 1200px) {
+		display: none;
+	}
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+	color: $menu-activ;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: $menu-text;
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: $menu-activ;
+}
+
+.form-inline {
+	
+	.btn {
+
+		.icon-search:before {
+  			content: "\e986";
+		}
+	}
+}
+
+.form-control {
+	width: auto;
+}
