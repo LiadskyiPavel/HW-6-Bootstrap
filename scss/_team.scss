@@ -70,14 +70,34 @@
 		padding-top: 80px;
 	}
 
+}
+
+.member-of-team {
+	position: relative;
+
+	&:hover {
+		visibility: hidden;;
+	}
+
 	img {
 		width: 100%;
+
+	}
+}
+
+.info {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	&:hover {
+		background:url(../images/team.jpg);
+		visibility: visible;
 	}
 }
 
 .member-name {
-	background: url(../images/team.jpg) no-repeat;
-	background-size: 100%;
 	padding: 10px 5px;
 	font-family: 'Poppins', sans-serif;
 	color: $white;

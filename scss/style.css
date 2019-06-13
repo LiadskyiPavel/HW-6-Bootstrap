@@ -140,17 +140,15 @@ header {
 .navigation img {
   max-width: 100%;
 }
-.navigation .gap {
-  display: none;
+@media (min-width: 992px) {
+  .navigation .gap {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .navigation .gap {
     display: flex;
   }
-}
-
-.navbar {
-  padding: 0;
 }
 
 @media (min-width: 992px) {
@@ -352,10 +350,6 @@ header {
   .about-image {
     top: -140px;
   }
-}
-.about-image .black-squer {
-  height: 50%;
-  background-color: #000000;
 }
 .about-image img {
   width: 100%;
@@ -731,7 +725,7 @@ header {
   position: relative;
 }
 .squer .activ img {
-  visibility: hidden;
+  display: none;
 }
 .squer .activ:before {
   content: "";
@@ -776,7 +770,7 @@ header {
   }
 }
 .squer .squer-1 {
-  margin-bottom: 15px;
+  padding: 0 2px;
 }
 .squer .squer-1:hover {
   padding: 0;
@@ -784,7 +778,7 @@ header {
   cursor: pointer;
 }
 .squer .squer-1:hover img {
-  visibility: hidden;
+  display: none;
 }
 .squer a {
   text-decoration: none;
@@ -1128,29 +1122,13 @@ header {
     padding-top: 80px;
   }
 }
-
-.member-of-team {
-  position: relative;
-}
-.member-of-team:hover {
-  visibility: hidden;
-}
-.member-of-team img {
+.team-member img {
   width: 100%;
 }
 
-.info {
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.info:hover {
-  background: url(../images/team.jpg);
-  visibility: visible;
-}
-
 .member-name {
+  background: url(../images/team.jpg) no-repeat;
+  background-size: 100%;
   padding: 10px 5px;
   font-family: "Poppins", sans-serif;
   color: #ffffff;

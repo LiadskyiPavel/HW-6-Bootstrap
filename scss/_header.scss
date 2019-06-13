@@ -129,11 +129,9 @@ header {
 		max-width: 100%;
 	}
 
-	@media (min-width: 992px){
+	.gap {
+		display: none;
 		
-		.gap {
-			display: none;
-		}
 	}	
 
 	@media (min-width: 1200px){
@@ -143,6 +141,11 @@ header {
 		}
 	}
 }
+
+.navbar {
+	padding: 0;
+}
+
 .navbar-brand {
 
 	@media (min-width: 992px) {
