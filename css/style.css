@@ -1131,23 +1131,20 @@ header {
 
 .member-of-team {
   position: relative;
-}
-.member-of-team:hover {
-  visibility: hidden;
+  margin-bottom: 10px;
 }
 .member-of-team img {
   width: 100%;
 }
 
 .info {
-  visibility: hidden;
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
 }
 .info:hover {
-  background: url(../images/team.jpg);
-  visibility: visible;
+  opacity: 1;
 }
 
 .member-name {
@@ -1215,8 +1212,13 @@ header {
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   color: #646464;
-  padding: 20px 70px;
+  padding: 23px 70px;
   background-color: #8bc34a;
+}
+@media (min-width: 576px) {
+  .member-icon {
+    padding: 21px 70px;
+  }
 }
 @media (min-width: 1024px) {
   .member-icon {

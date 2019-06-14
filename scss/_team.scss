@@ -74,9 +74,10 @@
 
 .member-of-team {
 	position: relative;
+	margin-bottom: 10px;
 
 	&:hover {
-		visibility: hidden;;
+		// visibility: hidden;;
 	}
 
 	img {
@@ -86,14 +87,14 @@
 }
 
 .info {
-	visibility: hidden;
+	opacity: 0;
 	position: absolute;
 	top: 0;
 	left: 0;
 
 	&:hover {
-		background:url(../images/team.jpg);
-		visibility: visible;
+		// background:url(../images/team.jpg);
+		opacity: 1;
 	}
 }
 
@@ -157,10 +158,12 @@
 	font-family: 'Poppins', sans-serif;
 	font-size: 13px;
 	color: $address-text;
-	padding: 20px 70px;
+	padding: 23px 70px;
 	background-color: $lime;
 
-	
+	@media (min-width: 576px) {
+		padding: 21px 70px;
+	}
 
 	@media (min-width: 1024px) {
 		padding: 20px 45px;
