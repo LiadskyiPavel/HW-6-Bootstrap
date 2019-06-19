@@ -1038,20 +1038,20 @@ header {
 }
 @media (min-width: 576px) {
   .banner-button-1 a {
-    padding: 5px 25px;
+    padding: 5px 20px;
     font-size: 10px;
   }
 }
 @media (min-width: 768px) {
   .banner-button-1 a {
-    padding: 10px 35px;
+    padding: 10px 24px;
     border-radius: 20px;
     font-size: 14px;
   }
 }
 @media (min-width: 1024px) {
   .banner-button-1 a {
-    padding: 20px 60px;
+    padding: 20px 44px;
     border-radius: 30px;
     font-size: 18px;
   }
@@ -1251,6 +1251,256 @@ header {
 }
 .member-icon .icon-dribbble:before {
   content: "";
+}
+
+.blog-post {
+  background-color: #ffffff;
+}
+.blog-post img {
+  width: 100%;
+}
+
+.recent {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
+}
+@media (min-width: 768px) {
+  .recent {
+    padding-top: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .recent {
+    padding-top: 80px;
+  }
+}
+.recent > span {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  color: #808080;
+}
+
+.recent-title {
+  position: relative;
+}
+.recent-title h3 {
+  text-transform: capitalize;
+  color: #444444;
+  font-weight: 600;
+}
+.recent-title h3:after {
+  content: "";
+  display: block;
+  width: 57px;
+  height: 1px;
+  background-color: #e8e8e8;
+  margin: 20px auto;
+}
+.recent-title h3:before {
+  content: "";
+  display: block;
+  width: 41px;
+  height: 3px;
+  background-color: #8bc34a;
+  border-radius: 10%;
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.recent-title span {
+  color: #8bc34a;
+  font-weight: 600;
+}
+
+.blog-holder {
+  padding-top: 20px;
+}
+@media (min-width: 1024px) {
+  .blog-holder {
+    padding: 80px 0;
+  }
+}
+
+.blog {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.calendar {
+  width: 40px;
+  position: absolute;
+  top: 60%;
+  left: 3%;
+}
+@media (min-width: 576px) {
+  .calendar {
+    width: 58px;
+    top: 67%;
+  }
+}
+@media (min-width: 768px) {
+  .calendar {
+    top: 75%;
+  }
+}
+@media (min-width: 1024px) {
+  .calendar {
+    top: 72%;
+  }
+}
+
+.blog-title {
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.blog-title h5 {
+  font-size: 16px;
+  color: #444444;
+}
+@media (min-width: 1024px) {
+  .blog-title h5 {
+    font-size: 20px;
+  }
+}
+.blog-title p {
+  font-size: 12px;
+  color: #808080;
+}
+@media (min-width: 1024px) {
+  .blog-title p {
+    font-size: 14px;
+  }
+}
+.blog-title p span {
+  color: #8bc34a;
+}
+
+.title-mini {
+  font-family: "Poppins", sans-serif;
+  background-color: #e6e6e6;
+}
+.title-mini h6 {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #444444;
+}
+@media (min-width: 1024px) {
+  .title-mini h6 {
+    font-size: 14px;
+  }
+}
+.title-mini p {
+  font-size: 10px;
+  color: #808080;
+}
+@media (min-width: 1024px) {
+  .title-mini p {
+    font-size: 12px;
+  }
+}
+.title-mini p span {
+  color: #8bc34a;
+}
+
+.partner {
+  background-color: #fafafa;
+}
+.partner img {
+  width: 100%;
+}
+
+.logo-partners {
+  padding: 20px 0;
+}
+@media (min-width: 1024px) {
+  .logo-partners {
+    padding: 100px 0;
+  }
+}
+.logo-partners a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.logo-partners a:hover {
+  opacity: 0.5;
+}
+.logo-partners .hamburger {
+  padding: 0 0 10px;
+}
+.logo-partners .vintage {
+  padding: 10px 0;
+}
+.logo-partners .pacific {
+  padding-top: 10px;
+}
+.logo-partners .pompadour {
+  padding-top: 10px;
+}
+
+.footer-logo-holder {
+  background-color: #303030;
+  padding: 125px 0 125px;
+}
+
+.footer-logo {
+  padding: 10px;
+  text-align: right;
+}
+
+.icon {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #646464;
+  padding: 0 70px;
+}
+@media (min-width: 576px) {
+  .icon {
+    padding: 0 5px;
+  }
+}
+.icon .activ {
+  color: #ffffff;
+}
+.icon a {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #646464;
+  text-decoration: none;
+}
+.icon a:hover {
+  color: #ffffff;
+}
+.icon .icon-twitter:before {
+  content: "";
+}
+.icon .icon-linkedin:before {
+  content: "";
+}
+.icon .icon-facebook:before {
+  content: "";
+}
+.icon .icon-skype:before {
+  content: "";
+}
+.icon .icon-dribbble:before {
+  content: "";
+}
+
+.footer-address {
+  background-color: #262626;
+  font-family: "Poppins", sans-serif;
+  color: #6b6b6b;
+  padding: 59px 0;
+}
+
+.contact-box {
+  padding: 10px;
+}
+.contact-box h6 {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

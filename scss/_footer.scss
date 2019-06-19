@@ -1,0 +1,71 @@
+.footer-logo-holder {
+	background-color: $footer-logo;
+	padding: 125px 0 125px;
+}
+
+.footer-logo {
+	padding: 10px;
+	text-align: right;
+}
+
+.icon {
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	color: $address-text;
+	padding: 0 70px;
+	// text-align: right;
+
+	@media (min-width: 576px) {
+		padding: 0 5px;
+		}
+
+	.activ {
+		color: $white;
+	}
+
+	a {
+		font-family: 'Poppins', sans-serif;
+		font-size: 13px;
+		color: $address-text;
+		text-decoration: none;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	.icon-twitter:before {
+  		content: "\e907";
+	}
+
+	.icon-linkedin:before {
+  		content: "\e904";
+	}
+
+	.icon-facebook:before {
+  		content: "\e902";
+	}
+
+	.icon-skype:before {
+  		content: "\e906";
+	}
+
+	.icon-dribbble:before {
+  		content: "\e900";
+	}
+}
+
+.footer-address {
+	background-color: $footer-address;
+	font-family: 'Poppins', sans-serif;
+	color: $footer-text;
+	padding: 59px 0;
+}
+
+.contact-box {
+	padding: 10px;
+
+	h6 {
+		font-size: 18px;
+	}
+}
